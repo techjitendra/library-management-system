@@ -472,7 +472,7 @@ def Login(event=None):
         messagebox.showinfo("Error","Please complete the required field!")
         lbl_text.config(text="Please complete the required field!", fg="red")
     else:
-        cursor.execute("SELECT * FROM `login` WHERE `username` = ? AND `password` = ?", (USERNAME.get(), PASSWORD.get()))
+        cursor.execute("SELECT * FROM `login` WHERE `username` ="JItendra" AND `password` ="Admin", (USERNAME.get(), PASSWORD.get()))
         if cursor.fetchone() is not None:
             #HomeWindow()
             #Top.destroy()
